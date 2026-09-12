@@ -43,7 +43,7 @@ constexpr std::string_view status_code_to_string(StatusCode code) noexcept {
   return "ERR unknown error";
 }
 
-enum class FsyncPolicy: uint_t {
+enum class FsyncPolicy: uint8_t {
     ALWAYS,
     EVERYSEC,
     NO
