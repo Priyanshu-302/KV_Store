@@ -49,7 +49,7 @@ namespace kv {
   }
 
   std::shared_ptr<spdlog::logger>& Logger::get_instance() noexcept {
-    return s_logger;
+    if (!s_logger) init(info); return s_logger;
 }
 
 }
