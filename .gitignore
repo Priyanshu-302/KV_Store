@@ -43,3 +43,5 @@ core
 core.*
 vgcore.*
 *.valgrind
+
+folder.xt
