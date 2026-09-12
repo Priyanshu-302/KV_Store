@@ -1,0 +1,52 @@
+kv-store/
+├── CMakeLists.txt
+├── README.md
+├── .gitignore
+├── config/
+│   └── server.conf
+├── cmake/
+│   └── Dependencies.cmake
+├── include/
+│   ├── common/
+│   │   ├── types.hpp
+│   │   └── logger.hpp
+│   ├── network/
+│   │   ├── socket.hpp
+│   │   ├── event_loop.hpp
+│   │   ├── connection.hpp
+│   │   └── server.hpp
+│   ├── protocol/
+│   │   ├── resp_types.hpp
+│   │   ├── resp_parser.hpp
+│   │   └── resp_serializer.hpp
+│   ├── storage/
+│   │   ├── entry.hpp
+│   │   ├── lru_cache.hpp
+│   │   └── engine.hpp
+│   └── persistence/
+│       └── aof.hpp
+├── src/
+│   ├── main.cpp
+│   ├── common/
+│   │   └── logger.cpp
+│   ├── network/
+│   │   ├── socket.cpp
+│   │   ├── event_loop.cpp
+│   │   ├── connection.cpp
+│   │   └── server.cpp
+│   ├── protocol/
+│   │   ├── resp_parser.cpp
+│   │   └── resp_serializer.cpp
+│   ├── storage/
+│   │   ├── lru_cache.cpp
+│   │   └── engine.cpp
+│   └── persistence/
+│       └── aof.cpp
+├── tests/
+│   ├── CMakeLists.txt
+│   ├── test_engine.cpp
+│   ├── test_resp.cpp
+│   └── test_aof.cpp
+└── scripts/
+    ├── benchmark.py
+    └── redis_cli_test.sh
